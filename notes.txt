@@ -1,0 +1,3 @@
+https://github.com//radicalxdev//mission-dynamoCards-v2.git
+frontend: npm create vite@latest dynamocards -> react -> javascript
+backend: npm install
