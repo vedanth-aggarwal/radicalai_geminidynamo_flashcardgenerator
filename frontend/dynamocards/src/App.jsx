@@ -20,8 +20,8 @@ function App() {
       const data = response.data;
       if (data.key_concepts && Array.isArray(data.key_concepts)) {
         const transformedConcepts = data.key_concepts.map(concept => {
-          const term = Object.keys(concept)[0];
-          const definition = concept[term];
+          const term = Object.keys(concept)[0]; //concept.term
+          const definition = concept[term]; //concept.definition
           return { term, definition }; 
         });
         setKeyConcepts(transformedConcepts);
